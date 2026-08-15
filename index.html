@@ -16,10 +16,18 @@ nav a{
     font-size:18px;
 }
 body{
-    background-color:#f0f4f8;
     font-family:"微软雅黑";
     margin:0;
     padding:20px;
+    /* 流动渐变背景 */
+    background: linear-gradient(-45deg, #ffeef2,#f3e5ff,#fffbdb);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+@keyframes bgMove {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 .content{
     max-width:800px;
@@ -41,15 +49,18 @@ img{
     <a href="article2.html">第二篇文章</a>
 </nav>
 
-<div class="content">
-    <h1>欢迎来到我的个人博客</h1>
-    <p>这里用来记录我的学习与生活。</p>
+<h1>欢迎来到我的个人博客</h1>
+<p>这里用来记录我的学习与生活。</p>
 
-    <img src="xiaoxin.jpg" alt="蜡笔小新">
+<img src="xiaoxin.jpg">
 
-    <h2>最近动态</h2>
-    <p>今天成功在 GitHub 上线了自己的第一个博客网站！</p>
-</div>
+<h3>最近动态</h3>
+<p>今天成功在 GitHub 上线了自己的第一个博客网站！</p>
+
+<!-- 背景音乐 -->
+<audio src="bgm.mp3" loop controls>
+
 
 </body>
 </html>
+
